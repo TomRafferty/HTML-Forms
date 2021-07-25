@@ -77,9 +77,15 @@
             <input name="q" type="text">
             <!-- this creates the drop down menu for filters -->
             <select name="s">
-                <option value="desc">desc</option>
-                <option value="asc">asc</option>
+                <option value="stars">stars</option>
+                <option value="forks">forks</option>
+                <option value="updated">updated</option>
             </select>
+
+            <label for="desc">descending</label>
+            <input id="desc" type="radio" name="o" value="desc">
+            <label for="asc">ascending</label>
+            <input id="asc" type="radio" name="o" value="asc">
 
             <button>Search GitHub</button>
         </form>
