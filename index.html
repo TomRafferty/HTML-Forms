@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML-Forms</title>
+        <link rel="stylesheet" href="stylesheet.css">
+    </head>
+<!-- -------------------------------------------- -->
+    <body>
+        <form action="">
+            <!-- creates a simple text box with a username label/prompt -->
+            <label for="username">Username:</label>
+            <input id="username" type="text" name="username">
+
+            <!-- creates a multi-line text box with a description
+            label/prompt -->
+            <label for="description">Description</label>
+            <textarea id="description" cols="50" rows="5"></textarea>
+        </form>
+
+        <form>
+            <!-- creates a radio button with a small label/prompt -->
+            <label for="small">Small</label>
+            <input id="small" type="radio" name="size" value="small">
+
+            <!-- creates a radio button with a medium label/prompt -->
+            <label for="medium">Medium</label>
+            <input id="medium" type="radio" name="size" value="medium">
+
+            <!-- creates a radio button with a large label/prompt -->
+            <label for="large">Large</label>
+            <input id="large" type="radio" name="size" value="large">
+        </form>
+        
+        <fieldset>
+            <!-- contains form elements inside a box -->
+            <legend>Coffee size</legend>
+            <!-- creates a radio button with a small label/prompt -->
+            <label for="small">Small</label>
+            <input id="small" type="radio" name="size" value="small">
+
+            <!-- creates a radio button with a medium label/prompt -->
+            <label for="medium">Medium</label>
+            <input id="medium" type="radio" name="size" value="medium">
+
+            <!-- creates a radio button with a large label/prompt -->
+            <label for="large">Large</label>
+            <input id="large" type="radio" name="size" value="large">
+        </fieldset>
+
+        <form id="checkbox">
+            <!-- this creates a checkbox with a label/prompt -->
+            <label for="agreement">I agree that Tom should win the lottery</label>
+            <input type="checkbox" name="agreement" id="agreement">
+        </form>
+
+        <fieldset id="food-list">
+            <legend>Food I like:</legend>
+            
+            <label for="pizza">Pizza</label>
+            <input type="checkbox" name="favourite-food" id="pizza" value="pizza">
+            
+            <label for="steak">Steak</label>
+            <input type="checkbox" name="favourite-food" id="steak" value="steak">
+
+            <label for="noodles">Noodles</label>
+            <input type="checkbox" name="favourite-food" id="noodles" value="noodles">
+            
+            <label for="chips">Chips</label>
+            <input type="checkbox" name="favourite-food" id="chips" value="chips">
+        </fieldset>
+
+        <form action="https://github.com/search" method="GET" target="_blank">
+            <!-- this creates a search input -->
+            <label for="q">Search</label>
+            <input name="q" type="text">
+            <!-- this creates the drop down menu for filters -->
+            <select name="s">
+                <option value="desc">desc</option>
+                <option value="asc">asc</option>
+            </select>
+
+            <button>Search GitHub</button>
+        </form>
+    </body>
+</html>
